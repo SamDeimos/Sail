@@ -29,9 +29,6 @@
     }
   },
   "extra": {
-    "branch-alias": {
-      "dev-master": "main"
-    },
     "laravel": {
       "providers": [
         "SamDeimos\\Sail\\SailServiceProvider"
