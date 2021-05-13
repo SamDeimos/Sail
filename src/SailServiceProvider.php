@@ -1,6 +1,6 @@
 <?php
 
-namespace Ajuchacko\Sail;
+namespace SamDeimos\Sail;
 
 use Illuminate\Contracts\Support\DeferrableProvider;
 use Illuminate\Support\Facades\Artisan;
@@ -29,7 +29,7 @@ class SailServiceProvider extends ServiceProvider implements DeferrableProvider
     protected function registerCommands()
     {
         Artisan::command('sail:install', function () {
-            copy(__DIR__.'/../stubs/docker-compose.yml', base_path('docker-compose.yml'));
+            copy(__DIR__ . '/../stubs/docker-compose.yml', base_path('docker-compose.yml'));
 
             $environment = file_get_contents(base_path('.env'));
 
@@ -59,7 +59,7 @@ class SailServiceProvider extends ServiceProvider implements DeferrableProvider
     protected function configurePublishing()
     {
         $this->publishes([
-            __DIR__.'/../runtimes' => base_path('docker'),
+            __DIR__ . '/../runtimes' => base_path('docker'),
         ], 'sail');
     }
 

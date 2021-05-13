@@ -7,8 +7,9 @@ Laravel sail for Laravel 7 apps.
 Use the package manager [composer](https://getcomposer.org/) to install package.
 
 ```bash
-composer install ajuchacko/sail-7.x --dev
+composer install samdeimos/sail --dev
 ```
+
 ## Usage
 
 ```php
