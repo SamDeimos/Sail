@@ -1,46 +1,12 @@
 {
-  "name": "samdeimos/sail",
-  "description": "Docker files for running a basic Laravel application.",
-  "keywords": [
-    "laravel",
-    "docker"
-  ],
-  "license": "MIT",
-  "support": {
-    "issues": "https://github.com/samdeimos/sail/issues",
-    "source": "https://github.com/samdeimos/sail"
-  },
-  "authors": [
-    {
-      "name": "SamDeimos",
-      "email": "zam.2014.sg@gmail.com",
-      "homepage": "https://github.com/samdeimos"
-    }
-  ],
-  "require": {
-    "php": ">=5.5.9",
-    "illuminate/contracts": "^7.0|^8.0|^9.0",
-    "illuminate/support": "^7.0|^8.0|^9.0"
-  },
-  "require-dev": {
-    "mockery/mockery": "^1.0",
-    "phpunit/phpunit": "^9.3"
-  },
-  "autoload": {
-    "psr-4": {
-      "SamDeimos\\Sail\\": "src/"
-    }
-  },
-  "extra": {
-    "laravel": {
-      "providers": [
-        "SamDeimos\\Sail\\SailServiceProvider"
-      ]
-    }
-  },
-  "config": {
-    "sort-packages": true
-  },
-  "minimum-stability": "dev",
-  "prefer-stable": true
+    "name": "samdeimos/sail",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Santiago Gutierrez",
+            "email": "zam.2014.sg@gmail.com"
+        }
+    ],
+    "minimum-stability": "dev",
+    "require": {}
 }
