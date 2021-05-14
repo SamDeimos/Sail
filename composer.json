@@ -1,6 +1,6 @@
 {
   "name": "samdeimos/sail",
-  "description": "Docker files for running a basic Laravel 7 application.",
+  "description": "Docker files for running a basic Laravel application.",
   "keywords": [
     "laravel",
     "docker"
@@ -12,17 +12,20 @@
   },
   "authors": [
     {
-      "name": "SamDeimos"
+      "name": "SamDeimos",
+      "email": "zam.2014.sg@gmail.com",
+      "homepage": "https://github.com/samdeimos"
     }
   ],
   "require": {
     "php": ">=5.5.9",
-    "illuminate/contracts": "^7.0",
-    "illuminate/support": "^7.0"
+    "illuminate/contracts": "^7.0|^8.0|^9.0",
+    "illuminate/support": "^7.0|^8.0|^9.0"
   },
-  "bin": [
-    "bin/sail"
-  ],
+  "require-dev": {
+    "mockery/mockery": "^1.0",
+    "phpunit/phpunit": "^9.3"
+  },
   "autoload": {
     "psr-4": {
       "SamDeimos\\Sail\\": "src/"
@@ -40,5 +43,7 @@
   },
   "config": {
     "sort-packages": true
-  }
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }
