@@ -1,12 +1,34 @@
 {
-    "name": "samdeimos/sail",
-    "license": "MIT",
-    "authors": [
-        {
-            "name": "Santiago Gutierrez",
-            "email": "zam.2014.sg@gmail.com"
-        }
-    ],
-    "minimum-stability": "dev",
-    "require": {}
+  "name": "samdeimos/sail",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Santiago Gutierrez",
+      "email": "zam.2014.sg@gmail.com"
+    }
+  ],
+  "autoload": {
+    "psr-4": {
+      "SamDeimos\\Sail\\": "src/"
+    }
+  },
+  "extra": {
+    "branch-alias": {
+      "dev-master": "2.x-dev"
+    },
+    "laravel": {
+      "providers": [
+        "SamDeimos\\Sail\\SailServiceProvider"
+      ]
+    }
+  },
+  "require": {},
+  "bin": [
+    "bin/sail"
+  ],
+  "config": {
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
 }

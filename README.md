@@ -1,4 +1,4 @@
-# Laravel Sail-7.x
+# Laravel Sail Legacy
 
 Laravel sail for Laravel 7 apps.
 
@@ -7,7 +7,7 @@ Laravel sail for Laravel 7 apps.
 Use the package manager [composer](https://getcomposer.org/) to install package.
 
 ```bash
-composer install samdeimos/sail --dev
+composer require samdeimos/sail --dev
 ```
 
 ## Usage
