@@ -13,7 +13,7 @@ RUN apt-get update && apt-get install -y \
     libzip-dev zip libicu-dev libpq-dev libpng-dev libxml2-dev
 RUN docker-php-source extract
 RUN docker-php-ext-configure pgsql -with-pgsql=/usr/local/pgsql
-RUN docker-php-ext-install pdo pdo_pgsql soap
+RUN docker-php-ext-install pdo pdo_pgsql pgsql soap
 
 RUN groupadd --force -g $WWWGROUP sail
 RUN useradd -ms /bin/bash --no-user-group -g $WWWGROUP -u 1337 sail
